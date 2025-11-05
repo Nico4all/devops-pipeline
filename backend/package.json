@@ -2,16 +2,18 @@
   "name": "crud-backend",
   "version": "1.0.0",
   "scripts": {
-  "start": "node index.js",
-  "test": "jest",
-  "lint": "eslint ."
-},
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.7.3"
   },
   "devDependencies": {
-    "eslint": "^8.0.0",
+    "@eslint/js": "^9.39.1",
+    "eslint": "^8.57.1",
+    "globals": "^16.5.0",
     "jest": "^30.2.0",
     "supertest": "^7.1.4"
   }
