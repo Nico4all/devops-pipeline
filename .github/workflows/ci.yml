@@ -46,7 +46,7 @@ jobs:
             --cache-to=type=local,dest=/tmp/.buildx-cache-new \
             -t crud-backend ./backend
 
-       - name: Update Docker cache
+      - name: Update Docker cache
         if: always()
         run: |
           rm -rf /tmp/.buildx-cache
