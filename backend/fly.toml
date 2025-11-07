@@ -12,6 +12,8 @@ app = "devops-pipeline-nico4all-munoza05"
 
   [[services.ports]]
     port = 80
+    handlers = ["http"]
 
   [[services.ports]]
     port = 443
+    handlers = ["tls", "http"]
