@@ -9,7 +9,7 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
 
-app.get("/healthz", (req, res) => res.json({ status: "ok" }));
+app.get("/healthz", (req, res) => res.json({ status: "ok", commit: COMMIT_HASH,}));
 
 app.get("/users", async (req, res) => {
   const { rows } = await pool.query("SELECT * FROM users");
