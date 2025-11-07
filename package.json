@@ -3,6 +3,6 @@
     "husky": "^8.0.0"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "test -d .git && husky install || true"
   }
 }
